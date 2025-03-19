@@ -14,6 +14,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            flex-direction: column;
         }
         .container {
             max-width: 900px;
@@ -67,6 +68,12 @@
         .download:hover {
             background-color: #0056b3;
         }
+        .gif-container {
+            margin-top: 20px;
+        }
+        .gif-container img {
+            width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -79,6 +86,9 @@
         <h1>Jeff Haltom, PhD</h1>
         <p>Experienced bioinformatician with expertise in genomics, transcriptomics, and machine learning. Proficient in high-performance computing, statistical modeling, and data-driven research. Currently a Senior Scientist at the Children's Hospital of Philadelphia, leading projects on mitochondrial genomics and disease associations.</p>
         <a href="Resume.pdf" class="download" download>Download Resume (PDF)</a>
+        <div class="gif-container">
+            <img src="giphy.gif" alt="DNA GIF">
+        </div>
     </div>
 </body>
 </html>
