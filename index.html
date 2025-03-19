@@ -10,41 +10,59 @@
             margin: 40px;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             background: white;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
+            flex-direction: column;
+            text-align: center;
         }
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
-        .content {
-            flex: 1;
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #007bff;
+        }
+        .nav a:hover {
+            text-decoration: underline;
         }
         h1 {
-            margin: 0;
-            font-size: 24px;
+            margin: 10px 0;
+            font-size: 28px;
         }
         p {
-            font-size: 16px;
-            line-height: 1.5;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 750px;
+            margin: 0 auto 20px;
         }
         .download {
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
+            margin-top: 15px;
+            padding: 12px 20px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 18px;
         }
         .download:hover {
             background-color: #0056b3;
@@ -53,18 +71,14 @@
 </head>
 <body>
     <div class="container">
-        <!-- Navigation Bar -->
         <div class="nav">
             <a href="index.html">Home</a>
             <a href="publications.html">Publications</a>
         </div>
-
         <img src="1678671074250.jpg" alt="Jeff Haltom" class="profile-img">
-        <div class="content">
-            <h1>Jeff Haltom, PhD</h1>
-            <p>Experienced bioinformatician with expertise in genomics, transcriptomics, and machine learning. Proficient in high-performance computing, statistical modeling, and data-driven research. Currently a Senior Scientist at the Children's Hospital of Philadelphia, leading projects on mitochondrial genomics and disease associations.</p>
-            <a href="Resume.pdf" class="download" download>Download Resume (PDF)</a>
-        </div>
+        <h1>Jeff Haltom, PhD</h1>
+        <p>Experienced bioinformatician with expertise in genomics, transcriptomics, and machine learning. Proficient in high-performance computing, statistical modeling, and data-driven research. Currently a Senior Scientist at the Children's Hospital of Philadelphia, leading projects on mitochondrial genomics and disease associations.</p>
+        <a href="Resume.pdf" class="download" download>Download Resume (PDF)</a>
     </div>
 </body>
 </html>
