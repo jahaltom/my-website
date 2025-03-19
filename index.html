@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+    <title>Jeff Haltom, PhD - Bioinformatics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .content {
+            flex: 1;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .download {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Website</h1>
-    <p>This is a simple webpage hosted on GitHub Pages!</p>
+    <div class="container">
+        <img src="1678671074250.jpg" alt="Jeff Haltom" class="profile-img">
+        <div class="content">
+            <h1>Jeff Haltom, PhD</h1>
+            <p>Experienced bioinformatician with expertise in genomics, transcriptomics, and machine learning. Proficient in high-performance computing, statistical modeling, and data-driven research. Currently a Senior Scientist at the Children's Hospital of Philadelphia, leading projects on mitochondrial genomics and disease associations.</p>
+            <a href="Resume.docx" class="download" download>Download Resume (PDF)</a>
+        </div>
+    </div>
 </body>
 </html>
