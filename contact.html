@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | J. A. Haltom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xh6kGmnHR+YwDz7kH8iFvVnZ9rE3jK2AdT1lyqBJuvN0JwHt9r6Njz0J3H3jGpPzA5D3XHlEYz4ZLbDmtl+L3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,23 +26,25 @@
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
     h2 {
       margin-top: 0;
     }
-    .contact-list {
-      list-style: none;
-      padding: 0;
+    .icon-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
     }
-    .contact-list li {
-      margin: 1rem 0;
+    .icon-links a {
+      color: #333;
+      font-size: 2rem;
+      transition: color 0.3s;
     }
-    .contact-list a {
+    .icon-links a:hover {
       color: #2980b9;
-      text-decoration: none;
-    }
-    .contact-list a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -51,18 +54,14 @@
   </header>
 
   <div class="container">
-        <div class="nav">
-            <a href="index.html">Home</a>
-        </div>
-    
     <h2>Let's Connect</h2>
-    <ul class="contact-list">
-      <li><strong>Email:</strong> <a href="mailto:jahaltom08@gmail.com">jahaltom08@gmail.com</a></li>
-      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeffrey-haltom/" target="_blank">Jeffrey Haltom</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/jahaltom" target="_blank">@jahaltom</a></li>
-      <li><strong>Facebook:</strong> <a href="https://www.facebook.com/jeff.haltom.9" target="_blank">Jeff Haltom</a></li>
-      <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?hl=en&user=4g4dh1EAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">View Publications</a></li>
-    </ul>
+    <div class="icon-links">
+      <a href="mailto:jahaltom08@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/jeffrey-haltom/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/jahaltom" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/jeff.haltom.9" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://scholar.google.com/citations?hl=en&user=4g4dh1EAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+    </div>
   </div>
 </body>
 </html>
