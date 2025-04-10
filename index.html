@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <title>Splash Screen</title>
     <style>
-        body {
+        html, body {
             margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
             background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            overflow: hidden;
         }
-        img {
-            max-width: 100%;
-            max-height: 100%;
+        .fullscreen-gif {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* fills the screen while maintaining aspect ratio */
         }
     </style>
     <script>
@@ -25,6 +29,6 @@
     </script>
 </head>
 <body>
-    <img src="Goku.gif" alt="Loading Goku...">
+    <img src="Goku.gif" alt="Loading Goku..." class="fullscreen-gif">
 </body>
 </html>
