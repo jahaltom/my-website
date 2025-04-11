@@ -12,10 +12,10 @@
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             min-height: 100vh;
-            flex-direction: column;
         }
+
         .container {
             max-width: 900px;
             background: white;
@@ -23,41 +23,50 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
-            align-items: center;
             flex-direction: column;
-            text-align: center;
+            align-items: flex-start;
         }
+
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
         }
+
         .nav {
             margin-bottom: 20px;
+            width: 100%;
         }
+
         .nav a {
-            margin: 0 15px;
+            margin: 0 15px 0 0;
             text-decoration: none;
             font-size: 18px;
             color: #007bff;
         }
+
         .nav a:hover {
             text-decoration: underline;
         }
+
         h1 {
             margin: 10px 0;
             font-size: 28px;
         }
+
         p {
             font-size: 18px;
             line-height: 1.6;
-            max-width: 750px;
-            margin: 0 auto 20px;
+            max-width: 850px;
+            margin: 0 0 20px 0;
+            text-align: left;
         }
+
         .download {
             display: inline-block;
             margin-top: 15px;
+            margin-right: 10px;
             padding: 12px 20px;
             background-color: #007bff;
             color: white;
@@ -65,12 +74,15 @@
             border-radius: 5px;
             font-size: 18px;
         }
+
         .download:hover {
             background-color: #0056b3;
         }
+
         .gif-container {
             margin-top: 20px;
         }
+
         .gif-container img {
             width: 200px;
         }
@@ -86,12 +98,13 @@
         </div>
         <img src="1678671074250.jpg" alt="Jeff Haltom" class="profile-img">
         <h1>Jeff Haltom, PhD</h1>
-        <p>I'm Jeffrey Haltom, a Ph.D.-trained bioinformatician with over 13 years of experience working at the intersection of computational biology, genomics, and data science. My work bridges high-throughput biology and scalable computing, with a deep focus on disease mechanisms and systems-level biology. I currently serve as a Senior Scientist Bioinformatician II at the Children’s Hospital of Philadelphia, where I lead multi-omic investigations into neurodevelopment, long COVID, and reproductive health, integrating large-scale mitochondrial genome data, transcriptomics, and environmental metadata. Throughout my academic and professional career, I’ve developed flexible, high-performance pipelines in Python and R, applying statistical modeling, machine learning, and deep learning to complex datasets. My tools and analyses have contributed to discoveries published in Nature Communications, Science Translational Medicine, and PNAS, with applications ranging from cancer and COVID-19 to space biology and preterm birth. I bring a collaborative mindset to every project, often working across disciplines—from NASA missions to hospital translational research—and mentoring others through teaching, invited talks, and workshops. Whether I'm modeling the evolutionary history of cancer driver mutations or uncovering new functional elements in orphan genes, my goal is to transform data into actionable biological insight.</p>
-        <a href="Resume.pdf" class="download" download>Download Resume (PDF)</a>
-        <a href="CV.pdf" class="download" download>Download CV (PDF)</a>
         <div class="gif-container">
             <img src="giphy.gif" alt="DNA GIF">
         </div>
+        <p>I'm Jeffrey Haltom, a Ph.D.-trained bioinformatician with over 13 years of experience working at the intersection of computational biology, genomics, and data science. My work bridges high-throughput biology and scalable computing, with a deep focus on disease mechanisms and systems-level biology. I currently serve as a Senior Scientist Bioinformatician II at the Children’s Hospital of Philadelphia, where I lead multi-omic investigations into neurodevelopment, long COVID, and reproductive health, integrating large-scale mitochondrial genome data, transcriptomics, and environmental metadata.</p>
+        <p>Throughout my academic and professional career, I’ve developed flexible, high-performance pipelines in Python and R, applying statistical modeling, machine learning, and deep learning to complex datasets. My tools and analyses have contributed to discoveries published in <em>Nature Communications</em>, <em>Science Translational Medicine</em>, and <em>PNAS</em>, with applications ranging from cancer and COVID-19 to space biology and preterm birth. I bring a collaborative mindset to every project, often working across disciplines—from NASA missions to hospital translational research—and mentoring others through teaching, invited talks, and workshops. Whether I'm modeling the evolutionary history of cancer driver mutations or uncovering new functional elements in orphan genes, my goal is to transform data into actionable biological insight.</p>
+        <a href="Resume.pdf" class="download" download>Download Resume (PDF)</a>
+        <a href="CV.pdf" class="download" download>Download CV (PDF)</a>
     </div>
 </body>
 </html>
