@@ -63,24 +63,26 @@
       height: 48px;
     }
 
-    .icon-links img,
-    .icon-links svg {
+    .icon-links img {
       width: 100%;
       height: 100%;
+      object-fit: contain;
       transition: transform 0.3s;
     }
 
-    .icon-links a:hover img,
-    .icon-links a:hover svg {
+    .icon-links a:hover img {
       transform: scale(1.2);
     }
 
-    .github-icon path {
+    .github-icon svg {
+      width: 100%;
+      height: 100%;
       fill: #333;
+      transition: transform 0.3s;
     }
 
-    .scholar-icon path {
-      fill: #4285F4;
+    .github-icon:hover svg {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -97,14 +99,14 @@
     <h2>Let's Connect</h2>
 
     <div class="icon-links">
-      <!-- Gmail Logo Image -->
+      <!-- Gmail -->
       <a href="mailto:jahaltom08@gmail.com" title="Email">
-        <img src="gmail.png" alt="Gmail Logo" />
+        <img src="gmail.png" alt="Gmail" />
       </a>
 
-      <!-- LinkedIn Logo Image -->
+      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/jeffrey-haltom/" target="_blank" title="LinkedIn">
-        <img src="linkedin.png" alt="LinkedIn Logo" />
+        <img src="linkedin.png" alt="LinkedIn" />
       </a>
 
       <!-- GitHub -->
@@ -114,11 +116,9 @@
         </svg>
       </a>
 
-      <!-- Google Scholar (Mortarboard Hat) -->
-      <a href="https://scholar.google.com/citations?hl=en&user=4g4dh1EAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar" class="scholar-icon">
-        <svg viewBox="0 0 24 24">
-          <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 13c-4 0-7.4 1.79-9 4.44L3.6 21c1.26-2.22 4.2-3.72 8.4-3.72s7.14 1.5 8.4 3.72l.6-1.56C19.4 16.79 16 15 12 15z"/>
-        </svg>
+      <!-- Google Scholar (image icon) -->
+      <a href="https://scholar.google.com/citations?hl=en&user=4g4dh1EAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar">
+        <img src="google_scholar.png" alt="Google Scholar" />
       </a>
     </div>
   </div>
